@@ -8,9 +8,9 @@ cursor = conexao.cursor()
 
 
 cursor.execute('''
-            SELECT nome
+            SELECT LOWER(nome)
             FROM USERS
-            WHERE LENGTH(nome)  > 15;        
+            WHERE LENGTH(nome) > 10;        
 ''')
 
 consulta = cursor.fetchall()
