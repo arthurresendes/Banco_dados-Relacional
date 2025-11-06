@@ -6,7 +6,7 @@ cursor = conexao.cursor()
 
 # Nao funciona no sqlite , apenas demonstração
 cursor.execute("""
-        SELECT nome, CONVERT(FLOAT , vendas_qtd), valor_venda, round((vendas_qtd * valor_venda),2) AS total FROM VENDEDOR
+        SELECT nome, CONVERT(vendas_qtd, FLOAT), valor_venda, round((vendas_qtd * valor_venda),2) AS total FROM VENDEDOR
 """)
 res = cursor.fetchall()
 for i in res:
