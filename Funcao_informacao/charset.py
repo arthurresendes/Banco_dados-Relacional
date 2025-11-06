@@ -4,16 +4,9 @@ import sqlite3
 conexao = sqlite3.connect("banco.db")
 cursor = conexao.cursor()
 
-
+# Nao funciona por aqui nativamente em sqlite3 mas funciona em servidores
 cursor.execute("""
-        CREATE TABLE VENDEDOR(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            nome VARCHAR(200),
-            nome_venda VARCHAR(100),
-            vendas_qtd INTEGER,
-            valor_venda REAL,
-            data_venda DATETIME
-        );
+        select charset(nome) from VENDEDOR where id = 2
 """)
 
 conexao.commit()
