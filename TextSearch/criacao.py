@@ -11,7 +11,8 @@ cursor.execute("""
             nome VARCHAR(200),
             nome_venda VARCHAR(100),
             vendas_qtd INTEGER,
-            valor_venda REAL
+            valor_venda REAL,
+            FULLTEXT (nome,nome_venda)
         );
 """)
 

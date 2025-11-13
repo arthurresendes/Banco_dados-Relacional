@@ -6,7 +6,7 @@ cursor = conexao.cursor()
 
 '''
 Em mysql funcionaria assim , porem como estamos no sqlite3 usamos o like
-cursor.execute("SELECT * FROM VENDEDOR WHERE MATCH(nome_venda) AGAINST('Notebook')")
+cursor.execute("SELECT * FROM VENDEDOR WHERE MATCH(nome,nome_venda) AGAINST('Notebook' IN NATURAL LANGUAGE MODE)")
 '''
 
 cursor.execute("SELECT * FROM VENDEDOR WHERE nome_venda LIKE '%Notebook%'")
