@@ -34,4 +34,4 @@ Cada pasta representa um conceito chave do SQL ou da modelagem de dados. Todos o
 
 ---
 
-**Explore cada pasta para aprender sobre os principais comandos, funções e boas práticas de bancos relacionais, tudo utilizando Python e o poder do SQLite!**
+**Explore cada pasta para aprender sobre os principais comandos, funções e boas práticas de bancos relacionais, tudo utilizando Python e o poder do SQLite3!**
